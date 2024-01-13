@@ -25,7 +25,7 @@ spec:
                 name: {{ .Release.Name }}
                 port:
                   name: https
-            path: /
+            path: {{ .Values.ingress.path }}
             pathType: {{ .Values.ingress.pathType }}
   {{- with .Values.ingress.tls }}
   tls:

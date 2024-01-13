@@ -307,6 +307,8 @@ service:
 ingress:
   # Enable ingress record generation
   enabled: false
+  # Ingress path
+  path: /
   # Ingress path type
   pathType: ImplementationSpecific
   ingressClassName: ""
